@@ -20,7 +20,7 @@ namespace DatabaseUI
         //上面代码莫动
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            //此处放读取文本框内字符作为用户名的程序
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace DatabaseUI
 
         private void PassWord_TextChanged(object sender, EventArgs e)
         {
-            //此处放读取文本框内字符作为密码的程序
+
         }
 
         private void Login_Click(object sender, EventArgs e)
@@ -46,8 +46,17 @@ namespace DatabaseUI
 
         public void login()
         {
+            string users = "id=" + UserName.Text + ",password=" + PassWord.Text;
 
-        }
+                if(users == "id=Admin,password=123456")
+            {
+                MessageBox.Show("登录成功！");
+            }
+            else
+            {
+                MessageBox.Show("登录失败！");
+            }
+        }//登录成功与否判断函数
     }
 }
 

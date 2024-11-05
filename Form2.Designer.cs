@@ -30,7 +30,8 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.学生管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.查询学生ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SearchStudent = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddStudent = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,24 +43,32 @@
             this.学生管理ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1544, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1544, 39);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 学生管理ToolStripMenuItem
             // 
             this.学生管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.查询学生ToolStripMenuItem});
+            this.SearchStudent,
+            this.AddStudent});
             this.学生管理ToolStripMenuItem.Name = "学生管理ToolStripMenuItem";
-            this.学生管理ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
+            this.学生管理ToolStripMenuItem.Size = new System.Drawing.Size(130, 35);
             this.学生管理ToolStripMenuItem.Text = "学生管理";
+            this.学生管理ToolStripMenuItem.Click += new System.EventHandler(this.学生管理ToolStripMenuItem_Click);
             // 
-            // 查询学生ToolStripMenuItem
+            // SearchStudent
             // 
-            this.查询学生ToolStripMenuItem.Name = "查询学生ToolStripMenuItem";
-            this.查询学生ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
-            this.查询学生ToolStripMenuItem.Text = "查询学生";
-            this.查询学生ToolStripMenuItem.Click += new System.EventHandler(this.查询学生ToolStripMenuItem_Click);
+            this.SearchStudent.Name = "SearchStudent";
+            this.SearchStudent.Size = new System.Drawing.Size(359, 44);
+            this.SearchStudent.Text = "查询学生";
+            this.SearchStudent.Click += new System.EventHandler(this.查询学生ToolStripMenuItem_Click);
+            // 
+            // AddStudent
+            // 
+            this.AddStudent.Name = "AddStudent";
+            this.AddStudent.Size = new System.Drawing.Size(359, 44);
+            this.AddStudent.Text = "添加学生";
             // 
             // AdminUI
             // 
@@ -84,6 +93,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 学生管理ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 查询学生ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SearchStudent;
+        private System.Windows.Forms.ToolStripMenuItem AddStudent;
     }
 }

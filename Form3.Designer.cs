@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.Top = new System.Windows.Forms.Panel();
-            this.Fill = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.search = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Fill = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Top.SuspendLayout();
             this.Fill.SuspendLayout();
@@ -48,22 +48,6 @@
             this.Top.Size = new System.Drawing.Size(800, 92);
             this.Top.TabIndex = 0;
             // 
-            // Fill
-            // 
-            this.Fill.Controls.Add(this.dataGridView1);
-            this.Fill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Fill.Location = new System.Drawing.Point(0, 92);
-            this.Fill.Name = "Fill";
-            this.Fill.Size = new System.Drawing.Size(800, 358);
-            this.Fill.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(105, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 35);
-            this.textBox1.TabIndex = 0;
-            // 
             // search
             // 
             this.search.Location = new System.Drawing.Point(432, 27);
@@ -72,6 +56,23 @@
             this.search.TabIndex = 1;
             this.search.Text = "search";
             this.search.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(105, 23);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(292, 35);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // Fill
+            // 
+            this.Fill.Controls.Add(this.dataGridView1);
+            this.Fill.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Fill.Location = new System.Drawing.Point(0, 92);
+            this.Fill.Name = "Fill";
+            this.Fill.Size = new System.Drawing.Size(800, 358);
+            this.Fill.TabIndex = 1;
             // 
             // dataGridView1
             // 
