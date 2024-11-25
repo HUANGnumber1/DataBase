@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace DatabaseUI
 {
-    public partial class Form3 : Form
+    public partial class Form4 : Form
     {
-        public Form3()
+        public Form4()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Form4_Load(object sender, EventArgs e)
         {
-
+            //从数据库中读取相应的数据，并显示出来
         }
     }
 }

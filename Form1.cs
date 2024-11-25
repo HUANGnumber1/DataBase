@@ -57,6 +57,11 @@ namespace DatabaseUI
                 MessageBox.Show("登录失败！");
             }
         }//登录成功与否判断函数
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
