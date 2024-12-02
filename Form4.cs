@@ -21,5 +21,10 @@ namespace DatabaseUI
         {
             //从数据库中读取相应的数据，并显示出来
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

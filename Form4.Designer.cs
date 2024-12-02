@@ -36,6 +36,9 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +53,7 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(29, 32);
+            this.dataGridView1.Location = new System.Drawing.Point(109, 117);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 37;
@@ -106,11 +109,42 @@
             this.Column7.Name = "Column7";
             this.Column7.Width = 200;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(73, 30);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(137, 59);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "增加";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(309, 30);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(137, 59);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "删除";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(546, 30);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(137, 59);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "修改";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1606, 872);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form4";
             this.Text = "Form4";
@@ -130,5 +164,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

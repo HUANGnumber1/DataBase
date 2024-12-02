@@ -38,8 +38,7 @@ namespace DatabaseUI
 
         private void 学生管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //在此处添加“添加学生"相应事件的数据库代码
-            MessageBox.Show("添加成功！");
+
         }
 
         private void 删除记录ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -58,6 +57,14 @@ namespace DatabaseUI
             //此处放置修改记录的代码
             MessageBox.Show("修改成功！");
 
+        }
+
+        private void AddStudent_Click(object sender, EventArgs e)
+        {
+            Form4 frm4 = new Form4();
+            frm4.Owner = this;
+            this.Hide();
+            frm4.Show();
         }
     }
 }

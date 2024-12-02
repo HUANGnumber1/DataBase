@@ -32,8 +32,6 @@
             this.学生管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SearchStudent = new System.Windows.Forms.ToolStripMenuItem();
             this.AddStudent = new System.Windows.Forms.ToolStripMenuItem();
-            this.删除记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.改变记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,9 +60,7 @@
             // 
             this.学生管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SearchStudent,
-            this.AddStudent,
-            this.删除记录ToolStripMenuItem,
-            this.改变记录ToolStripMenuItem});
+            this.AddStudent});
             this.学生管理ToolStripMenuItem.Name = "学生管理ToolStripMenuItem";
             this.学生管理ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
             this.学生管理ToolStripMenuItem.Text = "学生管理";
@@ -82,20 +78,7 @@
             this.AddStudent.Name = "AddStudent";
             this.AddStudent.Size = new System.Drawing.Size(359, 44);
             this.AddStudent.Text = "添加学生";
-            // 
-            // 删除记录ToolStripMenuItem
-            // 
-            this.删除记录ToolStripMenuItem.Name = "删除记录ToolStripMenuItem";
-            this.删除记录ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
-            this.删除记录ToolStripMenuItem.Text = "删除记录";
-            this.删除记录ToolStripMenuItem.Click += new System.EventHandler(this.删除记录ToolStripMenuItem_Click);
-            // 
-            // 改变记录ToolStripMenuItem
-            // 
-            this.改变记录ToolStripMenuItem.Name = "改变记录ToolStripMenuItem";
-            this.改变记录ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
-            this.改变记录ToolStripMenuItem.Text = "改变记录";
-            this.改变记录ToolStripMenuItem.Click += new System.EventHandler(this.改变记录ToolStripMenuItem_Click);
+            this.AddStudent.Click += new System.EventHandler(this.AddStudent_Click);
             // 
             // dataGridView1
             // 
@@ -192,8 +175,6 @@
         private System.Windows.Forms.ToolStripMenuItem 学生管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SearchStudent;
         private System.Windows.Forms.ToolStripMenuItem AddStudent;
-        private System.Windows.Forms.ToolStripMenuItem 删除记录ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 改变记录ToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
