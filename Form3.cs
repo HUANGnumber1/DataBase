@@ -24,9 +24,7 @@ namespace DatabaseUI
 
         private void search_Click(object sender, EventArgs e)
         {
-            //sql查找代码写在这里
-            //查完后
-            Form4 frm4 = new Form4();
+            Form4 frm4 = new Form4(this.textBox1.Text);
             frm4.Owner = this;
             this.Hide();
             frm4.Show();      

@@ -43,8 +43,6 @@ namespace DatabaseUI
 
         private void 删除记录ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //此处放删除记录的代码
-            MessageBox.Show("删除成功！");
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
@@ -54,8 +52,6 @@ namespace DatabaseUI
 
         private void 改变记录ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //此处放置修改记录的代码
-            MessageBox.Show("修改成功！");
 
         }
 
@@ -65,6 +61,11 @@ namespace DatabaseUI
             frm4.Owner = this;
             this.Hide();
             frm4.Show();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
