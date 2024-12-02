@@ -56,6 +56,7 @@
             this.search.TabIndex = 1;
             this.search.Text = "search";
             this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.search_Click);
             // 
             // textBox1
             // 

@@ -51,6 +51,8 @@ namespace DatabaseUI
                 if(users == "id=Admin,password=123456")
             {
                 MessageBox.Show("登录成功！");
+                AdminUI adminForm = new AdminUI();
+                adminForm.Show();
             }
             else
             {

@@ -54,7 +54,7 @@
             this.学生管理ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1544, 39);
+            this.menuStrip1.Size = new System.Drawing.Size(1544, 42);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -66,7 +66,7 @@
             this.删除记录ToolStripMenuItem,
             this.改变记录ToolStripMenuItem});
             this.学生管理ToolStripMenuItem.Name = "学生管理ToolStripMenuItem";
-            this.学生管理ToolStripMenuItem.Size = new System.Drawing.Size(130, 35);
+            this.学生管理ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
             this.学生管理ToolStripMenuItem.Text = "学生管理";
             this.学生管理ToolStripMenuItem.Click += new System.EventHandler(this.学生管理ToolStripMenuItem_Click);
             // 
@@ -95,6 +95,7 @@
             this.改变记录ToolStripMenuItem.Name = "改变记录ToolStripMenuItem";
             this.改变记录ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.改变记录ToolStripMenuItem.Text = "改变记录";
+            this.改变记录ToolStripMenuItem.Click += new System.EventHandler(this.改变记录ToolStripMenuItem_Click);
             // 
             // dataGridView1
             // 

@@ -39,16 +39,25 @@ namespace DatabaseUI
         private void 学生管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //在此处添加“添加学生"相应事件的数据库代码
+            MessageBox.Show("添加成功！");
         }
 
         private void 删除记录ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            //此处放删除记录的代码
+            MessageBox.Show("删除成功！");
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             //此处放链接到数据表的操作代码
+        }
+
+        private void 改变记录ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //此处放置修改记录的代码
+            MessageBox.Show("修改成功！");
+
         }
     }
 }
