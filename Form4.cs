@@ -14,8 +14,9 @@ namespace DatabaseUI
     {
         public Form4(string Value)
         {
-            Select( Value);
             InitializeComponent();
+            Select( Value);
+
         }
 
         public Form4()
